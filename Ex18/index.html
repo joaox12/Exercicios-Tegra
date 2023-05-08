@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Conversor de Temperatura</h1>
+    <form>
+      <label for="escala"
+        >Você vai digitar a temperatura em qual escala (C/F)?</label
+      >
+      <input type="text" id="escala" name="escala" /><br /><br />
+
+      <div id="celsius">
+        <label for="temp-celsius">Digite a temperatura em Celsius:</label>
+        <input
+          type="number"
+          id="temp-celsius"
+          name="temp-celsius"
+        /><br /><br />
+      </div>
+
+      <div id="fahrenheit">
+        <label for="temp-fahrenheit">Digite a temperatura em Fahrenheit:</label>
+        <input
+          type="number"
+          id="temp-fahrenheit"
+          name="temp-fahrenheit"
+        /><br /><br />
+      </div>
+
+      <input
+        type="button"
+        value="Converter"
+        onclick="converterTemperatura()"
+      /><br /><br />
+
+      <label for="resultado">Temperatura equivalente em:</label>
+      <input type="text" id="resultado" name="resultado" readonly />
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
